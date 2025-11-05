@@ -37,25 +37,22 @@
     <script src="/js/snake.js"></script>
 
 	<style>
-  /* Game container - scrollable and centered */
-  #sbc_game_content {
-    position: relative;
-    width: 960px; /* exact Phaser size */
-    height: 540px;
-    margin: 40px auto;
-    background: #002b3a;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-  }
+#sbc_game_content {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002b3a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
-  /* Keep the canvas at its natural game size */
-  #sbc_game_content canvas {
-    width: 960px !important;
-    height: 540px !important;
-    display: block;
-    margin: 0 auto;
-  }
+#sbc_game_content canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
   /* Responsive adjustments for smaller screens */
   @media (max-width: 1000px) {
