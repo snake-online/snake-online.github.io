@@ -46,6 +46,75 @@
             user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
             }
           </style>
+	<style>
+  article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f9fafb;
+    color: #1f2937;
+    line-height: 1.8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  article h1, article h2, article h3 {
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  article h1 {
+    font-size: 2rem;
+    color: #10b981; /* green heading */
+    text-align: center;
+  }
+
+  article h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border-left: 4px solid #10b981;
+    padding-left: 10px;
+  }
+
+  article a {
+    color: #10b981;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+
+  article ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+
+  article ul li {
+    margin-bottom: 8px;
+  }
+
+  strong {
+    color: #111827;
+  }
+
+  @media (max-width: 600px) {
+    article {
+      padding: 15px;
+    }
+    article h1 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
         
           <script type="text/javascript">
             setTimeout(function(){
@@ -344,5 +413,61 @@
         document.addEventListener('keyup', function (e) {
         	  fnSendMsg(event);
         });
-        </script></body>
+        </script>
+
+	<article>
+  <header>
+    <h1>Snake</h1>
+  </header>
+
+  <section>
+    <p>
+      Snake game is one of the most iconic and addictive games in the history of gaming.
+      Simple in concept yet endlessly engaging, it challenges players to guide a growing
+      snake around the screen, eating dots or food while avoiding collisions with walls
+      or its own body. Despite its minimal graphics, the Snake game has remained a favorite
+      across generations, from old Nokia phones to modern browsers.
+    </p>
+  </section>
+
+  <section>
+    <h2>How to Play Snake</h2>
+    <p>
+      The Snake game is easy to learn but hard to master. Use the arrow keys (↑, ↓, ←, →)
+      or WASD keys to control the direction of the snake, and you can also play with the mouse.
+      Your goal is to eat the food items that appear on the screen. Each one makes your snake
+      grow longer and increases your score.
+    </p>
+
+    <h3>Tips for playing Snake</h3>
+    <ul>
+      <li>Avoid running into the walls or your own tail — that ends the game.</li>
+      <li>Plan your moves ahead to prevent trapping yourself.</li>
+      <li>Try to control your speed as the game gets faster over time.</li>
+    </ul>
+
+    <p>
+      The challenge grows as your snake gets longer, testing your reflexes and focus with every turn!
+    </p>
+  </section>
+
+  <section>
+    <h2>Play Snake Game Online</h2>
+    <p>
+      You can now play Snake unblocked directly in your browser, no downloads, no ads, and completely free.
+      Whether you are at school, work, or home, the Snake game loads instantly and runs smoothly on any device.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why Snake Is Still So Popular</h2>
+    <p>
+      The charm of the Snake game lies in its simplicity. There are no complicated controls or flashy graphics,
+      just fast reflexes and focus. It’s a perfect game for quick breaks and can even help improve hand-eye coordination.
+    </p>
+  </section>
+</article>
+
+
+</body>
 </html>
