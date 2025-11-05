@@ -37,50 +37,40 @@
     <script src="/js/snake.js"></script>
 
 	<style>
-  /* Make the Snake game section larger but not fullscreen */
+  /* Game container - scrollable and centered */
   #sbc_game_content {
-    width: 90%;
-max-width: 100%;
-height: auto;
+    position: relative;
+    width: 960px; /* exact Phaser size */
+    height: 540px;
     margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #002b3a;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    background: #002b3a;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
   }
 
-  /* Ensure the Phaser canvas fits neatly */
+  /* Keep the canvas at its natural game size */
   #sbc_game_content canvas {
-    width: 100% !important;
-    height: 100% !important;
+    width: 960px !important;
+    height: 540px !important;
     display: block;
-    border-radius: 8px;
+    margin: 0 auto;
   }
 
-  /* Keep page scrollable */
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #001f2d;
-    font-family: Arial, sans-serif;
-    overflow-y: auto;
-  }
-
-  /* Add a nice responsive effect for small screens */
-  @media (max-width: 768px) {
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 1000px) {
     #sbc_game_content {
-      height: 450px;
+      width: 100%;
+      height: auto;
     }
-  }
 
-  @media (max-width: 480px) {
-    #sbc_game_content {
-      height: 380px;
+    #sbc_game_content canvas {
+      width: 100% !important;
+      height: auto !important;
     }
   }
 </style>
+
 
           <style type="text/css">
             .no-select {
