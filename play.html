@@ -1,63 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><base href='//www.coolmathgames.com/sites/default/files/public_games/47809/' /><meta name='robots' content='noindex'><link rel='canonical' href='https://www.coolmathgames.com/0-snake' /><script type="text/javascript">
-            // Google Tag Manager Start
-            //GA event helper functions
-            function getCookie(key) {
-              var keyValue = document.cookie.match("(^|;) ?" + key + "=([^;]*)(;|$)");
-              return keyValue ? keyValue[2] : null;
-            }
-            function setCookie2(key, value, exptime, domain) {
-              //document.cookie = key + "=" + value + ";";
-              var d = new Date();
-              d.setTime(d.getTime() + exptime);
-              var expires = "expires=" + d.toUTCString();
-              document.cookie = key + "=" + value + "; " + expires + "; path=/; domain=" +domain;
-            }
-            var cmg_ga4_gdpr_country = getCookie("GDPR");
-            var cmg_ga4_gdpr_allowed = false;
-            if(cmg_ga4_gdpr_country != null && getCookie("cmg_gdpr_uac") != null && getCookie("cmg_gdpr_uac") == "true") {
-              cmg_ga4_gdpr_allowed = true;
-            } else if(cmg_ga4_gdpr_country != null) {
-              jQuery(document).ready(function () {
-                if(typeof __tcfapi == "function") {
-                  cmg_ga4_gdpr_listener();
-                } else {
-                  setTimeout(function(){
-                    if(typeof __tcfapi == "function") {
-                      cmg_ga4_gdpr_listener();
-                    }
-                  }, 2000);
-                }
-              });
-            }
-            function cmg_ga4_gdpr_listener() {
-              __tcfapi("addEventListener", 2, function(tcdata, success) {
-                if(success) {
-                  if (tcdata.eventStatus === "useractioncomplete") {
-                    // User action completed, handle GA cookie accordingly
-                    console.log(success, tcdata);
-                    cmg_ga4_gdpr_allowed = true;
-                    setCookie("cmg_gdpr_uac", "true", 31556926 * 1000);
-                    cmg_ga4_init_ga();
-                  }
-                }
-              });
-            }
-          function cmg_ga4_init_ga() {
-            if(cmg_ga4_gdpr_country == null || (cmg_ga4_gdpr_country != null && cmg_ga4_gdpr_allowed) ) {
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];w[l].push({"gtm.start":
-                new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
-                "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,"script","dataLayer","GTM-WKRSNN8");
-            }
-          }
-          cmg_ga4_init_ga();
-        // Google Tag Manager End
-          </script>
+<head>
+	<base href='//snake-online.github.io/sites/default/files/public_games/47809/' />
+	<link rel='canonical' href='https://snake-online.github.io/play.html' />
     <title>Snake</title>
 
     <meta charset="utf-8">
@@ -86,9 +32,9 @@
     <script type="text/javascript" src="https://www.coolmathgames.com/sites/default/files/cmg-ads.js"></script>
     
     <!-- Game scripts -->
-    <script src="js/es6-promise.auto.min.js"></script>
-    <script src="js/phaser.min.js"></script>
-    <script src="js/snake.js"></script>
+    <script src="/sites/default/files/public_games/47809/js/es6-promise.auto.min.js"></script>
+    <script src="/sites/default/files/public_games/47809/js/phaser.min.js"></script>
+    <script src="/sites/default/files/public_games/47809/js/snake.js"></script>
 
           <style type="text/css">
             .no-select {
